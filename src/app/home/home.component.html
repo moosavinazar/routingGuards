@@ -1,1 +1,4 @@
 <p>home works!</p>
+
+<button *ngIf="!isLoggedIn" class="btn btn-primary" (click)="loginUser()">Login</button>
+<button *ngIf="isLoggedIn" class="btn btn-warning" (click)="logoutUser()">Logout</button>
